@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
+        integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>SocialEditor - simple editor to create and publish social media posts</title>
+</head>
+
+<body class="app">
+
+    <header class="header">
+        <img src="logo.svg" alt="SocialEditor logo" class="logo">
+        <button class="dd-toggle">File</button>
+        <button class="dd-toggle">View</button>
+        <button class="dd-toggle">New</button>
+        <button class="dd-toggle left">
+            <i class="fas fa-crown dd-toggle__icon"></i>
+        </button>
+        <button class="dd-toggle">
+            <i class="fas fa-bell dd-toggle__icon"></i>
+        </button>
+        <button class="dd-toggle">
+            <img src="https://images.unsplash.com/photo-1601158935942-52255782d322?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&q=100"
+                alt="User photo" class="dd-toggle__img">
+            <span class="dd-toggle__text">Ilon M.</span>
+        </button>
+
+    </header>
+
+    <div class="app__container">
+        <div class="sidebar">
+            <section class="menu">
+                <button class="menu__button">
+                    <i class="fas fa-layer-group menu__icon"></i>
+                    <span class="menu__text">Templates</span>
+                </button>
+                <button class="menu__button menu__button--active">
+                    <i class="fas fa-image menu__icon"></i>
+                    <span class="menu__text">Images</span>
+                </button>
+                <button class="menu__button">
+                    <i class="fas fa-font menu__icon"></i>
+                    <span class="menu__text">Text/Font</span>
+                </button>
+                <button class="menu__button">
+                    <i class="fas fa-shapes menu__icon"></i>
+                    <span class="menu__text">Shapes</span>
+                </button>
+            </section>
+            <footer class="footer">
+                <small class="copyright">&copy; SocialEditor App. All rights reserved.</small>
+            </footer>
+        </div>
+
+        <section class="panel">
+            <div class="panel__top">
+                <h1 class="first-heading">Images</h1>
+                <i class="fas fa-angle-double-left panel__collapse-icon"></i>
+            </div>
+            <div class="panel__images">
+                <img class="panel__img"
+                    src="https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=280&q=100"
+                    alt="Uploaded image">
+                <img class="panel__img"
+                    src="https://images.unsplash.com/photo-1617704548623-340376564e68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=280&q=100"
+                    alt="Uploaded image">
+                <img class="panel__img"
+                    src="https://images.unsplash.com/photo-1612810806695-30f7a8258391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=280&q=100"
+                    alt="Uploaded image">
+                <img class="panel__img"
+                    src="https://images.unsplash.com/photo-1560657100-ed9b42c676c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=280&q=100"
+                    alt="Uploaded image">
+                <img class="panel__img"
+                    src="https://images.unsplash.com/photo-1577547622463-2e995c756535?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=280&q=100"
+                    alt="Uploaded image">
+                <button class="panel__btn">
+                    <i class="fas fa-plus panel__upload-icon"></i>
+                </button>
+            </div>
+        </section>
+
+        <main class="main">
+            <div class="info-bar">
+                <section class="breadcrumbs">
+                    <a href="#" class="breadcrumbs__link">Facebook posts</a>
+                    <i class="fas fa-angle-right breadcrumbs__icon"></i>
+                    <span class="breadcrumbs__name">My new post</span>
+                </section>
+                <button class="button">Publish</button>
+            </div>
+
+            <div class="board">
+                <section class="canvas">
+                    <img class="canvas__bg-img"
+                        src="https://images.unsplash.com/photo-1601158935942-52255782d322?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=100"
+                        alt="Background image">
+                    <img class="canvas__fg-img"
+                        src="https://images.unsplash.com/photo-1601158935942-52255782d322?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1453&q=85"
+                        alt="Foreground image">
+                    <div class="canvas__circle"></div>
+                    <div class="canvas__circle"></div>
+                    <div class="canvas__circle"></div>
+                    <div class="canvas__circle"></div>
+                </section>
+                <section class="tools">
+                    <button class="tool tool--active">
+                        <i class="fas fa-crop-alt tool__icon"></i>
+                    </button>
+                    <button class="tool">
+                        <i class="fas fa-object-group tool__icon"></i>
+                    </button>
+                    <button class="tool">
+                        <i class="fas fa-pen tool__icon"></i>
+                    </button>
+                    <button class="tool">
+                        <i class="fas fa-trash tool__icon"></i>
+                    </button>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
